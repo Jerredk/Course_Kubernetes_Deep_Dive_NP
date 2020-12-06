@@ -5,7 +5,7 @@ metadata:
     run: test
   name: test
 spec:
-  replicas: 3
+  replicas: 6
   selector:
     matchLabels:
       run: test
@@ -21,5 +21,5 @@ spec:
         run: test
     spec:
       containers:
-      - image: nginx:1.12
+      - image: nginx:1.13
         name: nginx
